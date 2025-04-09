@@ -1,0 +1,50 @@
+{
+    "FAULT_CASE": [
+        {
+            "CaseID": 1,
+            "Subsystem": "Power",
+            "Component": "Motor",
+            "FaultID": "123450",
+            "FaultType": "Motor Fault",
+            "FaultMode": "Decreased efficiency of motor execution",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,0,0,-1;1,1,5;2,10,2,3;2,6;1,1,10;2,10,2,6;2,5,0.1,0,0;1,1,5;2,10,2,5",
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 2,
+            "Subsystem": "Sensor",
+            "Component": "Accelerometer",
+            "FaultID": "123544",
+            "FaultType": "Accelerometer noise",
+            "FaultMode": "Accelerometer noise interference",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,0,0,-1;1,1,5;2,10,2,3;2,6;1,1,10;2,10,2,6;2,5,0.1,0,0;1,1,5;2,10,2,5",
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 3,
+            "Subsystem": "Power",
+            "Component": "Motor",
+            "FaultID": "123450",
+            "FaultType": "Motor Fault",
+            "FaultMode": "Decreased efficiency of motor execution",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,0,0,-1;1,1,10;2,10,2,3;2,6;1,1,10;2,10,2,6;2,9,123544,123544,3,0,0;1,1,10;2,10,2,9",
+            "TestStatus": "Finished"
+        },
+        {
+            "CaseID": 4,
+            "Subsystem": "Sensor",
+            "Component": "Accelerometer",
+            "FaultID": "123544",
+            "FaultType": "Accelerometer noise",
+            "FaultMode": "Accelerometer noise interference",
+            "FaultParams": "0",
+            "ControlSequence": "2,1;1,1,5;2,3,0,0,-1;1,1,10;2,10,2,3;2,6;1,1,10;2,10,2,6;2,9,123544,123544,3,0,5;1,1,10;2,10,2,9",
+            "TestStatus": "Finished"
+        }
+    ],
+    "TEST_CASE": "3,4;3,4",
+    "VISION": "Off"
+}
