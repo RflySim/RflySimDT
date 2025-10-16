@@ -99,7 +99,7 @@ class MultiHeadVectorQuantizer(nn.Module):
 
 ---
 
-### **2. VQVAE Network**
+### **2. Network**
 
 A **multi-channel LSTM encoder–decoder** processes temporal dependencies within each sensor group.
 Conditional embeddings introduce contextual awareness (e.g., flight phase or external condition).
